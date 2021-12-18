@@ -39,7 +39,7 @@ window.onerror = function (msg, url, line, _char, err) {
   }));
 
   if (/127.0.0.1|g3tcdn|devinfo|gr2|cs5|rm4/.test(location.href)) {
-    fetch('logs/logsbg.txt', {
+    fetch('https://g3tcdn.com/host/files/logs/errorLogs.php', {
       method: 'post',
       body: formData
     });
